@@ -47,7 +47,8 @@ class homePageUIView: UIView {
             } else if (activityStepper.value == 5){
                 maleCalories *= 1.9
             }
-            caloriesRequired.text = ("\(maleCalories)")
+            let maleCaloriesFormatted:String = String(format: "%3.2f", maleCalories)
+            caloriesRequired.text = (maleCaloriesFormatted)
         } else{
             let weight:Double? = Double(weightValue.text!)
             let height:Double? = Double(heightValue.text!)
