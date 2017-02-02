@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07ADDFBA1E42B71500517448 /* homePageUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ADDFB91E42B71500517448 /* homePageUIView.swift */; };
 		07B6B89D1E4258A500D2D760 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B6B89C1E4258A500D2D760 /* AppDelegate.swift */; };
 		07B6B89F1E4258A500D2D760 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B6B89E1E4258A500D2D760 /* FirstViewController.swift */; };
 		07B6B8A11E4258A500D2D760 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B6B8A01E4258A500D2D760 /* SecondViewController.swift */; };
@@ -15,6 +16,7 @@
 		07B6B8A91E4258A500D2D760 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07B6B8A71E4258A500D2D760 /* LaunchScreen.storyboard */; };
 		07B6B8B41E4258A500D2D760 /* pplLiftTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B6B8B31E4258A500D2D760 /* pplLiftTrackerTests.swift */; };
 		07B6B8BF1E4258A500D2D760 /* pplLiftTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B6B8BE1E4258A500D2D760 /* pplLiftTrackerUITests.swift */; };
+		07B6B8CD1E4290CD00D2D760 /* statsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B6B8CC1E4290CD00D2D760 /* statsUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07ADDFB91E42B71500517448 /* homePageUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homePageUIView.swift; sourceTree = "<group>"; };
 		07B6B8991E4258A500D2D760 /* pplLiftTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pplLiftTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07B6B89C1E4258A500D2D760 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07B6B89E1E4258A500D2D760 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		07B6B8BA1E4258A500D2D760 /* pplLiftTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pplLiftTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07B6B8BE1E4258A500D2D760 /* pplLiftTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pplLiftTrackerUITests.swift; sourceTree = "<group>"; };
 		07B6B8C01E4258A500D2D760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07B6B8CC1E4290CD00D2D760 /* statsUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = statsUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,12 @@
 		07B6B89B1E4258A500D2D760 /* pplLiftTracker */ = {
 			isa = PBXGroup;
 			children = (
+				07ADDFB91E42B71500517448 /* homePageUIView.swift */,
 				07B6B89C1E4258A500D2D760 /* AppDelegate.swift */,
 				07B6B89E1E4258A500D2D760 /* FirstViewController.swift */,
 				07B6B8A01E4258A500D2D760 /* SecondViewController.swift */,
 				07B6B8A21E4258A500D2D760 /* Main.storyboard */,
+				07B6B8CC1E4290CD00D2D760 /* statsUIView.swift */,
 				07B6B8A51E4258A500D2D760 /* Assets.xcassets */,
 				07B6B8A71E4258A500D2D760 /* LaunchScreen.storyboard */,
 				07B6B8AA1E4258A500D2D760 /* Info.plist */,
@@ -265,9 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07B6B8CD1E4290CD00D2D760 /* statsUIView.swift in Sources */,
 				07B6B8A11E4258A500D2D760 /* SecondViewController.swift in Sources */,
 				07B6B89D1E4258A500D2D760 /* AppDelegate.swift in Sources */,
 				07B6B89F1E4258A500D2D760 /* FirstViewController.swift in Sources */,
+				07ADDFBA1E42B71500517448 /* homePageUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +524,7 @@
 				07B6B8C51E4258A500D2D760 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07B6B8C61E4258A500D2D760 /* Build configuration list for PBXNativeTarget "pplLiftTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +533,7 @@
 				07B6B8C81E4258A500D2D760 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07B6B8C91E4258A500D2D760 /* Build configuration list for PBXNativeTarget "pplLiftTrackerUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +542,7 @@
 				07B6B8CB1E4258A500D2D760 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
