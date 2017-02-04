@@ -18,23 +18,29 @@ class homePageUIView: UIView {
     @IBOutlet weak var maleFemaleSelector: UISegmentedControl!
     @IBOutlet weak var activityTextbox: UITextField!
     @IBOutlet weak var activityStepper: UIStepper!
-    @IBOutlet weak var welcomeMessage: UILabel!
-    @IBOutlet weak var firstName: UITextField!
     @IBOutlet weak var userAge: UITextField!
     @IBOutlet weak var caloriesRequired: UITextField!
     
-    @IBAction func nameEntered(_ sender: Any) {
-        welcomeMessage.text = "Welcome, " + firstName.text! + ", to your PPL Tracker."
-    }
     @IBAction func calculateCalories(_ sender: Any) {
-        //Men: BMR = 10 x weight (kg) + 6.25 x height (cm) – 5 x age (years) + 5
-        //WomenBMR = 10 x weight (kg) + 6.25 x height (cm) – 5 x age (years) – 161
+        let weight:Double? = Double(weightValue.text!)
+        let height:Double? = Double(heightValue.text!)
+        let age:Int? = Int(userAge.text!)
+        if(weight != nil && height != nil && userAge != nil){
+            actualCalorieCalculation(weight: weight!, height: height!, age: age!)
+        } else{
+            let nilAlertController = UIAlertController(title: "Hey AppCoda", message: "What do you want to do?", preferredStyle: .alert)
+
+            let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            nilAlertController.addAction(defaultAction)
+            
+            UIApplication.shared.keyWindow?.rootViewController?.present(nilAlertController, animated: true, completion: nil)
+        }
+    }
+    
+    func actualCalorieCalculation(weight: Double, height: Double, age: Int){
         if (maleFemaleSelector.selectedSegmentIndex == 0){
-            let weight:Double? = Double(weightValue.text!)
-            let height:Double? = Double(heightValue.text!)
-            let age:Int? = Int(userAge.text!)
-            var maleCalories = (10 * (weight! / 2.2) + (6.25 * (height! * 2.54)))
-            maleCalories =  maleCalories - Double(5 * age!)
+            var maleCalories = (10 * (weight / 2.2) + (6.25 * (height * 2.54)))
+            maleCalories =  maleCalories - Double(5 * age)
             maleCalories += 5
             if (activityStepper.value == 1){
                 maleCalories *= 1.2
@@ -67,7 +73,8 @@ class homePageUIView: UIView {
             } else if (activityStepper.value == 5){
                 femaleCalories *= 1.9
             }
-            caloriesRequired.text = ("\(femaleCalories)")
+            let femaleCaloriesFormatted:String = String(format: "%3.2f", femaleCalories)
+            caloriesRequired.text = femaleCaloriesFormatted
         }
     }
     

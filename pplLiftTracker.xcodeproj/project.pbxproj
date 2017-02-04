@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		075FF7911E463EFC00C15B0E /* workoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075FF7901E463EFC00C15B0E /* workoutViewController.swift */; };
+		0767B6571E44E651007138EC /* dataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0767B6551E44E651007138EC /* dataModel.xcdatamodeld */; };
 		07ADDFBA1E42B71500517448 /* homePageUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ADDFB91E42B71500517448 /* homePageUIView.swift */; };
 		07ADDFBE1E43877900517448 /* homePageUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ADDFBD1E43877900517448 /* homePageUIViewController.swift */; };
 		07ADDFC01E43985B00517448 /* liftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ADDFBF1E43985B00517448 /* liftViewController.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		075FF7901E463EFC00C15B0E /* workoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = workoutViewController.swift; path = ../workoutViewController.swift; sourceTree = "<group>"; };
+		0767B6561E44E651007138EC /* dataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dataModel.xcdatamodel; sourceTree = "<group>"; };
 		07ADDFB91E42B71500517448 /* homePageUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homePageUIView.swift; sourceTree = "<group>"; };
 		07ADDFBD1E43877900517448 /* homePageUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = homePageUIViewController.swift; path = ../homePageUIViewController.swift; sourceTree = "<group>"; };
 		07ADDFBF1E43985B00517448 /* liftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = liftViewController.swift; sourceTree = "<group>"; };
@@ -103,10 +107,12 @@
 		07B6B89B1E4258A500D2D760 /* pplLiftTracker */ = {
 			isa = PBXGroup;
 			children = (
+				075FF7901E463EFC00C15B0E /* workoutViewController.swift */,
 				07ADDFBD1E43877900517448 /* homePageUIViewController.swift */,
 				07ADDFBF1E43985B00517448 /* liftViewController.swift */,
 				07ADDFB91E42B71500517448 /* homePageUIView.swift */,
 				07B6B89C1E4258A500D2D760 /* AppDelegate.swift */,
+				0767B6551E44E651007138EC /* dataModel.xcdatamodeld */,
 				07B6B8A21E4258A500D2D760 /* Main.storyboard */,
 				07B6B8CC1E4290CD00D2D760 /* statsUIView.swift */,
 				07B6B8A51E4258A500D2D760 /* Assets.xcassets */,
@@ -271,7 +277,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				075FF7911E463EFC00C15B0E /* workoutViewController.swift in Sources */,
 				07ADDFBE1E43877900517448 /* homePageUIViewController.swift in Sources */,
+				0767B6571E44E651007138EC /* dataModel.xcdatamodeld in Sources */,
 				07B6B8CD1E4290CD00D2D760 /* statsUIView.swift in Sources */,
 				07B6B89D1E4258A500D2D760 /* AppDelegate.swift in Sources */,
 				07ADDFBA1E42B71500517448 /* homePageUIView.swift in Sources */,
@@ -545,6 +553,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0767B6551E44E651007138EC /* dataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0767B6561E44E651007138EC /* dataModel.xcdatamodel */,
+			);
+			currentVersion = 0767B6561E44E651007138EC /* dataModel.xcdatamodel */;
+			path = dataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 07B6B8911E4258A500D2D760 /* Project object */;
 }

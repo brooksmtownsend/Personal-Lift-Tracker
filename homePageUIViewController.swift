@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import CoreData
 
 class homePageUIViewController: UIViewController {
+    var names = [NSManagedObject]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +30,8 @@ class homePageUIViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
     
     func dismissKeyboard() {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
