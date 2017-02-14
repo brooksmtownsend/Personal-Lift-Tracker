@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import CoreData
 
 class liftViewController: UIViewController {
+    @IBAction func saveWorkout(_ sender: Any) {
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

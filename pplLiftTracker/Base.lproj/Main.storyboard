@@ -284,6 +284,14 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqa-Zn-pix">
+                                        <rect key="frame" x="164" y="346" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="saveWorkout:" destination="hj9-NE-MXP" eventType="touchUpInside" id="AcX-aa-kzd"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZnB-1H-HbO">
@@ -313,7 +321,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j2a-ae-PYm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1884" y="-511"/>
+            <point key="canvasLocation" x="-1884" y="-511.39430284857576"/>
         </scene>
         <!--Pull-->
         <scene sceneID="hNz-n2-bh7">
@@ -527,6 +535,6 @@
         <image name="stats" width="13" height="12"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lR4-1q-xXI"/>
+        <segue reference="CCM-wc-r5U"/>
     </inferredMetricsTieBreakers>
 </document>
