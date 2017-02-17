@@ -10,9 +10,7 @@ import UIKit
 import CoreData
 
 class liftViewController: UIViewController {
-    @IBAction func saveWorkout(_ sender: Any) {
-        
-    }
+    @IBOutlet weak var scrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

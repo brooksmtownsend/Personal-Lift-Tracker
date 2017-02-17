@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		075FF7911E463EFC00C15B0E /* workoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075FF7901E463EFC00C15B0E /* workoutViewController.swift */; };
+		0727B1051E57A6AC003DC8DB /* testScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0727B1041E57A6AC003DC8DB /* testScrollView.xib */; };
 		0767B6571E44E651007138EC /* dataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0767B6551E44E651007138EC /* dataModel.xcdatamodeld */; };
 		07ADDFBA1E42B71500517448 /* homePageUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ADDFB91E42B71500517448 /* homePageUIView.swift */; };
 		07ADDFBE1E43877900517448 /* homePageUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ADDFBD1E43877900517448 /* homePageUIViewController.swift */; };
@@ -39,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		075FF7901E463EFC00C15B0E /* workoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = workoutViewController.swift; path = ../workoutViewController.swift; sourceTree = "<group>"; };
+		0727B1041E57A6AC003DC8DB /* testScrollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = testScrollView.xib; sourceTree = "<group>"; };
 		0767B6561E44E651007138EC /* dataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dataModel.xcdatamodel; sourceTree = "<group>"; };
 		07ADDFB91E42B71500517448 /* homePageUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homePageUIView.swift; sourceTree = "<group>"; };
 		07ADDFBD1E43877900517448 /* homePageUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = homePageUIViewController.swift; path = ../homePageUIViewController.swift; sourceTree = "<group>"; };
@@ -107,7 +107,6 @@
 		07B6B89B1E4258A500D2D760 /* pplLiftTracker */ = {
 			isa = PBXGroup;
 			children = (
-				075FF7901E463EFC00C15B0E /* workoutViewController.swift */,
 				07ADDFBD1E43877900517448 /* homePageUIViewController.swift */,
 				07ADDFBF1E43985B00517448 /* liftViewController.swift */,
 				07ADDFB91E42B71500517448 /* homePageUIView.swift */,
@@ -118,6 +117,7 @@
 				07B6B8A51E4258A500D2D760 /* Assets.xcassets */,
 				07B6B8A71E4258A500D2D760 /* LaunchScreen.storyboard */,
 				07B6B8AA1E4258A500D2D760 /* Info.plist */,
+				0727B1041E57A6AC003DC8DB /* testScrollView.xib */,
 			);
 			path = pplLiftTracker;
 			sourceTree = "<group>";
@@ -251,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07B6B8A91E4258A500D2D760 /* LaunchScreen.storyboard in Resources */,
+				0727B1051E57A6AC003DC8DB /* testScrollView.xib in Resources */,
 				07B6B8A61E4258A500D2D760 /* Assets.xcassets in Resources */,
 				07B6B8A41E4258A500D2D760 /* Main.storyboard in Resources */,
 			);
@@ -277,7 +278,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				075FF7911E463EFC00C15B0E /* workoutViewController.swift in Sources */,
 				07ADDFBE1E43877900517448 /* homePageUIViewController.swift in Sources */,
 				0767B6571E44E651007138EC /* dataModel.xcdatamodeld in Sources */,
 				07B6B8CD1E4290CD00D2D760 /* statsUIView.swift in Sources */,
