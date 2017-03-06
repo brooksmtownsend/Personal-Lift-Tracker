@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0727B1051E57A6AC003DC8DB /* testScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0727B1041E57A6AC003DC8DB /* testScrollView.xib */; };
+		072A8B5F1E69D7CE0029A375 /* exerciseWriteupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A8B5E1E69D7CE0029A375 /* exerciseWriteupViewController.swift */; };
+		075F86611E67BE9D0059A400 /* AddWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F86601E67BE9C0059A400 /* AddWorkoutViewController.swift */; };
 		0767B6571E44E651007138EC /* dataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0767B6551E44E651007138EC /* dataModel.xcdatamodeld */; };
 		07ADDFBA1E42B71500517448 /* homePageUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ADDFB91E42B71500517448 /* homePageUIView.swift */; };
 		07ADDFBE1E43877900517448 /* homePageUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ADDFBD1E43877900517448 /* homePageUIViewController.swift */; };
@@ -40,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		0727B1041E57A6AC003DC8DB /* testScrollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = testScrollView.xib; sourceTree = "<group>"; };
+		072A8B5E1E69D7CE0029A375 /* exerciseWriteupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = exerciseWriteupViewController.swift; path = ../exerciseWriteupViewController.swift; sourceTree = "<group>"; };
+		075F86601E67BE9C0059A400 /* AddWorkoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWorkoutViewController.swift; sourceTree = "<group>"; };
 		0767B6561E44E651007138EC /* dataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dataModel.xcdatamodel; sourceTree = "<group>"; };
 		07ADDFB91E42B71500517448 /* homePageUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homePageUIView.swift; sourceTree = "<group>"; };
 		07ADDFBD1E43877900517448 /* homePageUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = homePageUIViewController.swift; path = ../homePageUIViewController.swift; sourceTree = "<group>"; };
@@ -107,10 +111,12 @@
 		07B6B89B1E4258A500D2D760 /* pplLiftTracker */ = {
 			isa = PBXGroup;
 			children = (
+				072A8B5E1E69D7CE0029A375 /* exerciseWriteupViewController.swift */,
 				07ADDFBD1E43877900517448 /* homePageUIViewController.swift */,
 				07ADDFBF1E43985B00517448 /* liftViewController.swift */,
 				07ADDFB91E42B71500517448 /* homePageUIView.swift */,
 				07B6B89C1E4258A500D2D760 /* AppDelegate.swift */,
+				075F86601E67BE9C0059A400 /* AddWorkoutViewController.swift */,
 				0767B6551E44E651007138EC /* dataModel.xcdatamodeld */,
 				07B6B8A21E4258A500D2D760 /* Main.storyboard */,
 				07B6B8CC1E4290CD00D2D760 /* statsUIView.swift */,
@@ -280,8 +286,10 @@
 			files = (
 				07ADDFBE1E43877900517448 /* homePageUIViewController.swift in Sources */,
 				0767B6571E44E651007138EC /* dataModel.xcdatamodeld in Sources */,
+				075F86611E67BE9D0059A400 /* AddWorkoutViewController.swift in Sources */,
 				07B6B8CD1E4290CD00D2D760 /* statsUIView.swift in Sources */,
 				07B6B89D1E4258A500D2D760 /* AppDelegate.swift in Sources */,
+				072A8B5F1E69D7CE0029A375 /* exerciseWriteupViewController.swift in Sources */,
 				07ADDFBA1E42B71500517448 /* homePageUIView.swift in Sources */,
 				07ADDFC01E43985B00517448 /* liftViewController.swift in Sources */,
 			);

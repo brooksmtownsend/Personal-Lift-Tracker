@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16C67" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Workout" representedClassName="Workout" syncable="YES" codeGenerationType="class">
         <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ex1name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ex1reps1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ex1reps2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ex1reps3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ex1weight1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ex1weight2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ex1weight3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ex2name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ex2reps1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ex2reps2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ex2reps3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ex2reps4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ex2reps5" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ex2weight1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ex2weight2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ex2weight3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ex2weight4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ex2weight5" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ex3name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="muscleGroup" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Workout" positionX="-2027" positionY="-1737" width="128" height="90"/>
+        <element name="Workout" positionX="-2027" positionY="-1737" width="128" height="375"/>
     </elements>
 </model>
