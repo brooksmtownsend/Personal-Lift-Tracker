@@ -546,6 +546,17 @@
                         <outlet property="ex2weight3Label" destination="jh7-1Q-bPt" id="5Fk-qJ-95F"/>
                         <outlet property="ex2weight4Label" destination="CtH-gn-xmE" id="Tz6-Qb-bvO"/>
                         <outlet property="ex2weight5Label" destination="jhR-dS-g8J" id="M5X-2a-vIK"/>
+                        <outlet property="ex3nameLabel" destination="IOb-3A-daD" id="coj-mQ-zvb"/>
+                        <outlet property="ex3reps1Label" destination="g3W-3p-3nb" id="GMq-n5-SwJ"/>
+                        <outlet property="ex3reps2Label" destination="U8d-TA-AFp" id="KBA-Wj-3w1"/>
+                        <outlet property="ex3reps3Label" destination="dhZ-pk-Oqs" id="9u7-Rq-GQE"/>
+                        <outlet property="ex3reps4Label" destination="HUo-ik-1yh" id="zWk-aA-7MB"/>
+                        <outlet property="ex3reps5Label" destination="hmF-Cl-5Jg" id="2vC-x1-UGh"/>
+                        <outlet property="ex3weight1Label" destination="1gn-Iu-A38" id="bk5-iz-lqB"/>
+                        <outlet property="ex3weight2Label" destination="WsU-hV-Ju5" id="hKD-fi-6xE"/>
+                        <outlet property="ex3weight3Label" destination="mOF-8S-hMV" id="SEY-yx-nrk"/>
+                        <outlet property="ex3weight4Label" destination="gXT-g7-R30" id="Zgv-4Q-DgR"/>
+                        <outlet property="ex3weight5Label" destination="qLh-vg-kEW" id="X7C-Ej-3TH"/>
                         <outlet property="workoutNameLabel" destination="sFL-qK-slW" id="AV5-9P-hCR"/>
                     </connections>
                 </viewController>
@@ -784,7 +795,7 @@
                                         <rect key="frame" x="73" y="-64" width="229" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Set 4: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAE-ze-vGY">
                                         <rect key="frame" x="72" y="301" width="57" height="21"/>
@@ -838,7 +849,7 @@
                                         <rect key="frame" x="72" y="385" width="229" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Set 1: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCs-1X-S8g">
                                         <rect key="frame" x="73" y="423" width="57" height="21"/>
@@ -964,13 +975,13 @@
                                         <rect key="frame" x="73" y="148" width="229" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Main Exercise" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kcG-Wa-uQf">
                                         <rect key="frame" x="71" y="-9" width="229" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJ9-RU-kzN">
                                         <rect key="frame" x="127" y="609" width="121" height="30"/>
@@ -1186,6 +1197,17 @@
                         <outlet property="ex2weight3" destination="qfP-eq-35X" id="EEb-Ih-Kez"/>
                         <outlet property="ex2weight4" destination="cu4-IA-wY7" id="lPp-Fk-Gfi"/>
                         <outlet property="ex2weight5" destination="qfP-eq-35X" id="ohy-l9-Y6c"/>
+                        <outlet property="ex3name" destination="21s-9F-t3O" id="Oht-RM-rZj"/>
+                        <outlet property="ex3reps1" destination="3ZI-Xs-6gd" id="scL-T5-Bk8"/>
+                        <outlet property="ex3reps2" destination="Wuy-y2-F8w" id="c1u-nV-mGe"/>
+                        <outlet property="ex3reps3" destination="NRf-Yu-lkX" id="dXa-XU-Exo"/>
+                        <outlet property="ex3reps4" destination="keN-j3-Nzl" id="4lb-V5-wBt"/>
+                        <outlet property="ex3reps5" destination="MRc-Kl-MTd" id="xdH-2i-RIy"/>
+                        <outlet property="ex3weight1" destination="VaP-t2-vgY" id="Jp7-uq-q0c"/>
+                        <outlet property="ex3weight2" destination="Zx3-vF-r7v" id="0Fy-d2-mBW"/>
+                        <outlet property="ex3weight3" destination="8lr-ih-QpO" id="0ze-Fx-8Rp"/>
+                        <outlet property="ex3weight4" destination="jAk-Hh-bgT" id="aee-ha-jUH"/>
+                        <outlet property="ex3weight5" destination="0xk-tt-CRh" id="PKM-V6-cwO"/>
                         <outlet property="saveWorkout" destination="XJ9-RU-kzN" id="rcw-C9-hZ0"/>
                         <outlet property="scrollView" destination="9Ct-XD-IYb" id="fmA-Lb-lhF"/>
                         <outlet property="workoutName" destination="cce-vP-so5" id="aMh-6j-Dhc"/>
@@ -1213,7 +1235,7 @@
             </objects>
             <point key="canvasLocation" x="-326" y="419"/>
         </scene>
-        <!--Add Workouts-->
+        <!--Workouts-->
         <scene sceneID="HJA-K1-psf">
             <objects>
                 <viewController id="Upe-0l-1y8" customClass="AddWorkoutViewController" customModule="pplLiftTracker" customModuleProvider="target" sceneMemberID="viewController">
@@ -1229,12 +1251,28 @@
                                 <rect key="frame" x="0.0" y="72" width="375" height="546"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="workout" editingAccessoryType="disclosureIndicator" id="jWO-cn-LEd">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="workout" editingAccessoryType="disclosureIndicator" textLabel="kRC-Ml-wNg" detailTextLabel="obu-Tg-euR" style="IBUITableViewCellStyleValue1" id="jWO-cn-LEd">
                                         <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jWO-cn-LEd" id="gJP-9B-m8N">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kRC-Ml-wNg">
+                                                    <rect key="frame" x="15" y="12" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="obu-Tg-euR">
+                                                    <rect key="frame" x="296" y="12" width="44" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -1249,9 +1287,9 @@
                             <constraint firstAttribute="trailing" secondItem="Of9-vM-Rhx" secondAttribute="trailing" id="Zhd-NB-FGn"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Add Workouts" id="Kmv-QC-L3X">
+                    <navigationItem key="navigationItem" title="Workouts" id="Kmv-QC-L3X">
                         <barButtonItem key="backBarButtonItem" title="Home" id="rC1-H5-XKR"/>
-                        <barButtonItem key="rightBarButtonItem" title="Add" id="lYg-z5-9O0">
+                        <barButtonItem key="rightBarButtonItem" title="Log" id="lYg-z5-9O0">
                             <connections>
                                 <segue destination="8rJ-Kc-sve" kind="show" id="Efk-h9-YOV"/>
                             </connections>

@@ -15,6 +15,7 @@ class exerciseWriteupViewController: UIViewController {
     var workoutName = "No Name"
     var ex1name = "No Name"
     var ex2name = "No Name"
+    var ex3name = "No Name"
     var ex1weight1 = "Blank"
     var ex1weight2 = "Blank"
     var ex1weight3 = "Blank"
@@ -31,10 +32,21 @@ class exerciseWriteupViewController: UIViewController {
     var ex2reps3 = "Blank"
     var ex2reps4 = "Blank"
     var ex2reps5 = "Blank"
+    var ex3weight1 = "Blank"
+    var ex3weight2 = "Blank"
+    var ex3weight3 = "Blank"
+    var ex3weight4 = "Blank"
+    var ex3weight5 = "Blank"
+    var ex3reps1 = "Blank"
+    var ex3reps2 = "Blank"
+    var ex3reps3 = "Blank"
+    var ex3reps4 = "Blank"
+    var ex3reps5 = "Blank"
     
     //MARK: Labels to change
     @IBOutlet weak var ex1nameLabel: UILabel!
     @IBOutlet weak var ex2nameLabel: UILabel!
+    @IBOutlet weak var ex3nameLabel: UILabel!
     @IBOutlet weak var ex1weight1Label: UILabel!
     @IBOutlet weak var ex1reps1Label: UILabel!
     @IBOutlet weak var ex1weight2Label: UILabel!
@@ -51,6 +63,16 @@ class exerciseWriteupViewController: UIViewController {
     @IBOutlet weak var ex2reps3Label: UILabel!
     @IBOutlet weak var ex2reps4Label: UILabel!
     @IBOutlet weak var ex2reps5Label: UILabel!
+    @IBOutlet weak var ex3weight1Label: UILabel!
+    @IBOutlet weak var ex3weight2Label: UILabel!
+    @IBOutlet weak var ex3weight3Label: UILabel!
+    @IBOutlet weak var ex3weight4Label: UILabel!
+    @IBOutlet weak var ex3weight5Label: UILabel!
+    @IBOutlet weak var ex3reps1Label: UILabel!
+    @IBOutlet weak var ex3reps2Label: UILabel!
+    @IBOutlet weak var ex3reps3Label: UILabel!
+    @IBOutlet weak var ex3reps4Label: UILabel!
+    @IBOutlet weak var ex3reps5Label: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,6 +81,7 @@ class exerciseWriteupViewController: UIViewController {
         workoutNameLabel.text = workoutName
         ex1nameLabel.text = ex1name
         ex2nameLabel.text = ex2name
+        ex3nameLabel.text = ex3name
         ex1weight1Label.text = ex1weight1 + " lbs"
         ex1weight2Label.text = ex1weight2 + " lbs"
         ex1weight3Label.text = ex1weight3 + " lbs"
@@ -75,6 +98,16 @@ class exerciseWriteupViewController: UIViewController {
         ex2reps3Label.text = ex2reps3
         ex2reps4Label.text = ex2reps4
         ex2reps5Label.text = ex2reps5
+        ex3weight1Label.text = ex3weight1 + " lbs"
+        ex3weight2Label.text = ex3weight2 + " lbs"
+        ex3weight3Label.text = ex3weight3 + " lbs"
+        ex3weight4Label.text = ex3weight4 + " lbs"
+        ex3weight5Label.text = ex3weight5 + " lbs"
+        ex3reps1Label.text = ex3reps1
+        ex3reps2Label.text = ex3reps2
+        ex3reps3Label.text = ex3reps3
+        ex3reps4Label.text = ex3reps4
+        ex3reps5Label.text = ex3reps5
     }
 
     override func didReceiveMemoryWarning() {

@@ -17,6 +17,7 @@ class liftViewController: UIViewController {
     @IBOutlet weak var workoutName: UITextField!
     @IBOutlet weak var ex1name: UITextField!
     @IBOutlet weak var ex2name: UITextField!
+    @IBOutlet weak var ex3name: UITextField!
     @IBOutlet weak var ex1weight1: UITextField!
     @IBOutlet weak var ex1weight2: UITextField!
     @IBOutlet weak var ex1weight3: UITextField!
@@ -33,6 +34,16 @@ class liftViewController: UIViewController {
     @IBOutlet weak var ex2reps3: UITextField!
     @IBOutlet weak var ex2reps4: UITextField!
     @IBOutlet weak var ex2reps5: UITextField!
+    @IBOutlet weak var ex3weight1: UITextField!
+    @IBOutlet weak var ex3weight2: UITextField!
+    @IBOutlet weak var ex3weight3: UITextField!
+    @IBOutlet weak var ex3weight4: UITextField!
+    @IBOutlet weak var ex3weight5: UITextField!
+    @IBOutlet weak var ex3reps1: UITextField!
+    @IBOutlet weak var ex3reps2: UITextField!
+    @IBOutlet weak var ex3reps3: UITextField!
+    @IBOutlet weak var ex3reps4: UITextField!
+    @IBOutlet weak var ex3reps5: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,6 +80,17 @@ class liftViewController: UIViewController {
         workout.ex2weight3 = ex2weight3.text
         workout.ex2weight4 = ex2weight4.text
         workout.ex2weight5 = ex2weight5.text
+        workout.ex3name = ex3name.text
+        workout.ex3reps1 = ex3reps1.text
+        workout.ex3reps2 = ex3reps2.text
+        workout.ex3reps3 = ex3reps3.text
+        workout.ex3reps4 = ex3reps4.text
+        workout.ex3reps5 = ex3reps5.text
+        workout.ex3weight1 = ex3weight1.text
+        workout.ex3weight2 = ex3weight2.text
+        workout.ex3weight3 = ex3weight3.text
+        workout.ex3weight4 = ex3weight4.text
+        workout.ex3weight5 = ex3weight5.text
         // Save the data to coredata
         
         (UIApplication.shared.delegate as! AppDelegate).saveContext()

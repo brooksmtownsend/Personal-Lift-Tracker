@@ -50,14 +50,18 @@ class AddWorkoutViewController: UIViewController, UITableViewDataSource, UITable
     
     //MARK: Adding a cell
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "Cell")
+        let cell = UITableViewCell(style: .value1, reuseIdentifier: "Cell")
         let workout = myWorkouts[indexPath.row]
 
         if let myName = workout.value(forKeyPath: "name") {
             cell.textLabel?.text = myName as? String
-            cell.detailTextLabel?.text = "Workout on: "
-            //TODO Insert Date here
+            cell.detailTextLabel?.text = ">"
         }
+        //TODO: Figure out Dates.
+//        let dateformatter = DateFormatter()
+//        dateformatter.dateStyle = DateFormatter.Style.short
+//        let test = dateformatter.string(from: ((myWorkouts[indexPathHolder].value(forKeyPath: "date")) as? Date)!)
+//        let now = dateformatter.string(from: NSDate() as Date)
         
         return cell
     }
@@ -79,7 +83,6 @@ class AddWorkoutViewController: UIViewController, UITableViewDataSource, UITable
             // set a variable in the second view controller with the data to pass
             if let workoutName = (myWorkouts[indexPathHolder].value(forKeyPath: "name")) as? String{
                 exerciseWriteupViewController.workoutName = workoutName
-                
             }
             //MARK: Filling exercise 1
             if let ex1name = (myWorkouts[indexPathHolder].value(forKeyPath: "ex1name")) as? String{
@@ -138,6 +141,39 @@ class AddWorkoutViewController: UIViewController, UITableViewDataSource, UITable
                 exerciseWriteupViewController.ex2weight5 = ex2weight5
             }
             //MARK: Filling Exercise 3
+            if let ex3name = (myWorkouts[indexPathHolder].value(forKeyPath: "ex3name")) as? String{
+                exerciseWriteupViewController.ex3name = ex3name
+            }
+            if let ex3reps1 = (myWorkouts[indexPathHolder].value(forKeyPath: "ex3reps1")) as? String{
+                exerciseWriteupViewController.ex3reps1 = ex3reps1
+            }
+            if let ex3reps2 = (myWorkouts[indexPathHolder].value(forKeyPath: "ex3reps2")) as? String{
+                exerciseWriteupViewController.ex3reps2 = ex3reps2
+            }
+            if let ex3reps3 = (myWorkouts[indexPathHolder].value(forKeyPath: "ex3reps3")) as? String{
+                exerciseWriteupViewController.ex3reps3 = ex3reps3
+            }
+            if let ex3reps4 = (myWorkouts[indexPathHolder].value(forKeyPath: "ex3reps4")) as? String{
+                exerciseWriteupViewController.ex3reps4 = ex3reps4
+            }
+            if let ex3reps5 = (myWorkouts[indexPathHolder].value(forKeyPath: "ex3reps5")) as? String{
+                exerciseWriteupViewController.ex3reps5 = ex3reps5
+            }
+            if let ex3weight1 = (myWorkouts[indexPathHolder].value(forKeyPath: "ex3weight1")) as? String{
+                exerciseWriteupViewController.ex3weight1 = ex3weight1
+            }
+            if let ex3weight2 = (myWorkouts[indexPathHolder].value(forKeyPath: "ex3weight2")) as? String{
+                exerciseWriteupViewController.ex3weight2 = ex3weight2
+            }
+            if let ex3weight3 = (myWorkouts[indexPathHolder].value(forKeyPath: "ex3weight3")) as? String{
+                exerciseWriteupViewController.ex3weight3 = ex3weight3
+            }
+            if let ex3weight4 = (myWorkouts[indexPathHolder].value(forKeyPath: "ex3weight4")) as? String{
+                exerciseWriteupViewController.ex3weight4 = ex3weight4
+            }
+            if let ex3weight5 = (myWorkouts[indexPathHolder].value(forKeyPath: "ex3weight5")) as? String{
+                exerciseWriteupViewController.ex3weight5 = ex3weight5
+            }
             
         }
         
