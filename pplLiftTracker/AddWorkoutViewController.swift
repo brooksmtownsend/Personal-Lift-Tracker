@@ -50,12 +50,13 @@ class AddWorkoutViewController: UIViewController, UITableViewDataSource, UITable
     
     //MARK: Adding a cell
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .value1, reuseIdentifier: "Cell")
+//        let cell = UITableViewCell(style: .default, reuseIdentifier: "workoutCell") as! WorkoutTableViewCell
+        let cell = workoutTableView.dequeueReusableCell(withIdentifier: "workoutCell", for: indexPath)
         let workout = myWorkouts[indexPath.row]
 
         if let myName = workout.value(forKeyPath: "name") {
             cell.textLabel?.text = myName as? String
-            cell.detailTextLabel?.text = ">"
+            //cell.detailTextLabel?.text = ">"
         }
         //TODO: Figure out Dates.
 //        let dateformatter = DateFormatter()
