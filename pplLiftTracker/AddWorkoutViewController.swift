@@ -15,12 +15,13 @@ class AddWorkoutViewController: UIViewController, UITableViewDataSource, UITable
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var myWorkouts: [NSManagedObject] = []
     var indexPathHolder = 0
+    let mySections: [String] = ["Squat", "Bench", "Deadlift", "Shoulder Press", "Other"]
+    var sectionNumbers: [Int] = [0, 0, 0, 1, 5]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         workoutTableView.delegate = self
         workoutTableView.dataSource = self
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -29,7 +30,12 @@ class AddWorkoutViewController: UIViewController, UITableViewDataSource, UITable
     }
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return myWorkouts.count
+        //return myWorkouts.count
+        return sectionNumbers[section]
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return self.mySections.count
     }
     
     //MARK: Deleting a cell
@@ -50,21 +56,30 @@ class AddWorkoutViewController: UIViewController, UITableViewDataSource, UITable
     
     //MARK: Adding a cell
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = UITableViewCell(style: .default, reuseIdentifier: "workoutCell") as! WorkoutTableViewCell
-        let cell = workoutTableView.dequeueReusableCell(withIdentifier: "workoutCell", for: indexPath)
         let workout = myWorkouts[indexPath.row]
-
-        if let myName = workout.value(forKeyPath: "name") {
-            cell.textLabel?.text = myName as? String
-            //cell.detailTextLabel?.text = ">"
+        
+        if (workout.value(forKeyPath: "ex1name") as? String == "Military Press") {
+            let cell = workoutTableView.dequeueReusableCell(withIdentifier: "pressDay", for: indexPath)
+            if let myName = workout.value(forKeyPath: "name") {
+                cell.textLabel?.text = myName as? String
+            }
+            return cell
+            
+        } else{
+            let cell = workoutTableView.dequeueReusableCell(withIdentifier: "workoutCell", for: indexPath)
+            if let myName = workout.value(forKeyPath: "name") {
+                cell.textLabel?.text = myName as? String
+            }
+            return cell
         }
+        
+        
         //TODO: Figure out Dates.
 //        let dateformatter = DateFormatter()
 //        dateformatter.dateStyle = DateFormatter.Style.short
 //        let test = dateformatter.string(from: ((myWorkouts[indexPathHolder].value(forKeyPath: "date")) as? Date)!)
 //        let now = dateformatter.string(from: NSDate() as Date)
         
-        return cell
     }
 
     override func didReceiveMemoryWarning() {
@@ -85,6 +100,7 @@ class AddWorkoutViewController: UIViewController, UITableViewDataSource, UITable
             if let workoutName = (myWorkouts[indexPathHolder].value(forKeyPath: "name")) as? String{
                 exerciseWriteupViewController.workoutName = workoutName
             }
+            
             //MARK: Filling exercise 1
             if let ex1name = (myWorkouts[indexPathHolder].value(forKeyPath: "ex1name")) as? String{
                 exerciseWriteupViewController.ex1name = ex1name
@@ -107,6 +123,7 @@ class AddWorkoutViewController: UIViewController, UITableViewDataSource, UITable
             if let ex1weight3 = (myWorkouts[indexPathHolder].value(forKeyPath: "ex1weight3")) as? String{
                 exerciseWriteupViewController.ex1weight3 = ex1weight3
             }
+            
             //MARK: Filling exercise 2
             if let ex2name = (myWorkouts[indexPathHolder].value(forKeyPath: "ex2name")) as? String{
                 exerciseWriteupViewController.ex2name = ex2name
@@ -141,6 +158,7 @@ class AddWorkoutViewController: UIViewController, UITableViewDataSource, UITable
             if let ex2weight5 = (myWorkouts[indexPathHolder].value(forKeyPath: "ex2weight5")) as? String{
                 exerciseWriteupViewController.ex2weight5 = ex2weight5
             }
+            
             //MARK: Filling Exercise 3
             if let ex3name = (myWorkouts[indexPathHolder].value(forKeyPath: "ex3name")) as? String{
                 exerciseWriteupViewController.ex3name = ex3name
@@ -180,39 +198,6 @@ class AddWorkoutViewController: UIViewController, UITableViewDataSource, UITable
         
         
     }
-
-    
-    //MARK: Saving a cell
-//    func save(name: String) {
-//        
-//        guard let appDelegate =
-//            UIApplication.shared.delegate as? AppDelegate else {
-//                return
-//        }
-//        
-//        // 1
-//        let managedContext =
-//            appDelegate.persistentContainer.viewContext
-//        
-//        // 2
-//        let entity =
-//            NSEntityDescription.entity(forEntityName: "Workout",
-//                                       in: managedContext)!
-//        
-//        let workout = NSManagedObject(entity: entity,
-//                                     insertInto: managedContext)
-//        
-//        // 3
-//        workout.setValue(name, forKeyPath: "name")
-//        
-//        // 4
-//        do {
-//            try managedContext.save()
-//            myWorkouts.append(workout)
-//        } catch let error as NSError {
-//            print("Could not save. \(error), \(error.userInfo)")
-//        }
-//    }
     
     //MARK: Refreshing data
     func getData() {
@@ -232,6 +217,38 @@ class AddWorkoutViewController: UIViewController, UITableViewDataSource, UITable
             print("Could not fetch. \(error), \(error.userInfo)")
         }
     }
+    
+    //MARK: Saving a cell
+    //    func save(name: String) {
+    //
+    //        guard let appDelegate =
+    //            UIApplication.shared.delegate as? AppDelegate else {
+    //                return
+    //        }
+    //
+    //        // 1
+    //        let managedContext =
+    //            appDelegate.persistentContainer.viewContext
+    //
+    //        // 2
+    //        let entity =
+    //            NSEntityDescription.entity(forEntityName: "Workout",
+    //                                       in: managedContext)!
+    //
+    //        let workout = NSManagedObject(entity: entity,
+    //                                     insertInto: managedContext)
+    //
+    //        // 3
+    //        workout.setValue(name, forKeyPath: "name")
+    //
+    //        // 4
+    //        do {
+    //            try managedContext.save()
+    //            myWorkouts.append(workout)
+    //        } catch let error as NSError {
+    //            print("Could not save. \(error), \(error.userInfo)")
+    //        }
+    //    }
    
     /*
     // MARK: - Navigation
