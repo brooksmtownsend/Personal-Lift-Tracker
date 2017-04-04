@@ -15,8 +15,8 @@ class AddWorkoutViewController: UIViewController, UITableViewDataSource, UITable
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var myWorkouts: [NSManagedObject] = []
     var indexPathHolder = 0
-    let mySections: [String] = ["Squat", "Bench", "Deadlift", "Shoulder Press", "Other"]
-    var sectionNumbers: [Int] = [0, 0, 0, 1, 5]
+    //let mySections: [String] = ["Squat", "Bench", "Deadlift", "Shoulder Press", "Other"]
+    //var sectionNumbers: [Int] = [0, 0, 0, 1, 5]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,12 +31,12 @@ class AddWorkoutViewController: UIViewController, UITableViewDataSource, UITable
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         //return myWorkouts.count
-        return sectionNumbers[section]
+        return self.myWorkouts.count
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return self.mySections.count
-    }
+//    func numberOfSections(in tableView: UITableView) -> Int {
+//        return self.mySections.count
+//    }
     
     //MARK: Deleting a cell
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
