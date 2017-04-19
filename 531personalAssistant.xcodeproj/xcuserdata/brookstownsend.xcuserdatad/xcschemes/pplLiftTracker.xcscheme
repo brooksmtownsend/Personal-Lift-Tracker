@@ -17,7 +17,7 @@
                BlueprintIdentifier = "07B6B8981E4258A500D2D760"
                BuildableName = "pplLiftTracker.app"
                BlueprintName = "pplLiftTracker"
-               ReferencedContainer = "container:pplLiftTracker.xcodeproj">
+               ReferencedContainer = "container:531personalAssistant.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "07B6B8AE1E4258A500D2D760"
                BuildableName = "pplLiftTrackerTests.xctest"
                BlueprintName = "pplLiftTrackerTests"
-               ReferencedContainer = "container:pplLiftTracker.xcodeproj">
+               ReferencedContainer = "container:531personalAssistant.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -45,7 +45,7 @@
                BlueprintIdentifier = "07B6B8B91E4258A500D2D760"
                BuildableName = "pplLiftTrackerUITests.xctest"
                BlueprintName = "pplLiftTrackerUITests"
-               ReferencedContainer = "container:pplLiftTracker.xcodeproj">
+               ReferencedContainer = "container:531personalAssistant.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,7 +55,7 @@
             BlueprintIdentifier = "07B6B8981E4258A500D2D760"
             BuildableName = "pplLiftTracker.app"
             BlueprintName = "pplLiftTracker"
-            ReferencedContainer = "container:pplLiftTracker.xcodeproj">
+            ReferencedContainer = "container:531personalAssistant.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -78,7 +78,7 @@
             BlueprintIdentifier = "07B6B8981E4258A500D2D760"
             BuildableName = "pplLiftTracker.app"
             BlueprintName = "pplLiftTracker"
-            ReferencedContainer = "container:pplLiftTracker.xcodeproj">
+            ReferencedContainer = "container:531personalAssistant.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -97,7 +97,7 @@
             BlueprintIdentifier = "07B6B8981E4258A500D2D760"
             BuildableName = "pplLiftTracker.app"
             BlueprintName = "pplLiftTracker"
-            ReferencedContainer = "container:pplLiftTracker.xcodeproj">
+            ReferencedContainer = "container:531personalAssistant.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

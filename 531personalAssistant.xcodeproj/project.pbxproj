@@ -91,9 +91,9 @@
 		07B6B8901E4258A500D2D760 = {
 			isa = PBXGroup;
 			children = (
-				07B6B89B1E4258A500D2D760 /* pplLiftTracker */,
-				07B6B8B21E4258A500D2D760 /* pplLiftTrackerTests */,
-				07B6B8BD1E4258A500D2D760 /* pplLiftTrackerUITests */,
+				07B6B89B1E4258A500D2D760 /* 531personalAssistant */,
+				07B6B8B21E4258A500D2D760 /* 531personalAssistantTests */,
+				07B6B8BD1E4258A500D2D760 /* 531personalAssistantUITests */,
 				07B6B89A1E4258A500D2D760 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,7 +108,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		07B6B89B1E4258A500D2D760 /* pplLiftTracker */ = {
+		07B6B89B1E4258A500D2D760 /* 531personalAssistant */ = {
 			isa = PBXGroup;
 			children = (
 				072A8B5E1E69D7CE0029A375 /* exerciseWriteupViewController.swift */,
@@ -125,24 +125,27 @@
 				07B6B8AA1E4258A500D2D760 /* Info.plist */,
 				0727B1041E57A6AC003DC8DB /* testScrollView.xib */,
 			);
+			name = 531personalAssistant;
 			path = pplLiftTracker;
 			sourceTree = "<group>";
 		};
-		07B6B8B21E4258A500D2D760 /* pplLiftTrackerTests */ = {
+		07B6B8B21E4258A500D2D760 /* 531personalAssistantTests */ = {
 			isa = PBXGroup;
 			children = (
 				07B6B8B31E4258A500D2D760 /* pplLiftTrackerTests.swift */,
 				07B6B8B51E4258A500D2D760 /* Info.plist */,
 			);
+			name = 531personalAssistantTests;
 			path = pplLiftTrackerTests;
 			sourceTree = "<group>";
 		};
-		07B6B8BD1E4258A500D2D760 /* pplLiftTrackerUITests */ = {
+		07B6B8BD1E4258A500D2D760 /* 531personalAssistantUITests */ = {
 			isa = PBXGroup;
 			children = (
 				07B6B8BE1E4258A500D2D760 /* pplLiftTrackerUITests.swift */,
 				07B6B8C01E4258A500D2D760 /* Info.plist */,
 			);
+			name = 531personalAssistantUITests;
 			path = pplLiftTrackerUITests;
 			sourceTree = "<group>";
 		};
@@ -231,7 +234,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 07B6B8941E4258A500D2D760 /* Build configuration list for PBXProject "pplLiftTracker" */;
+			buildConfigurationList = 07B6B8941E4258A500D2D760 /* Build configuration list for PBXProject "531personalAssistant" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -444,7 +447,7 @@
 				DEVELOPMENT_TEAM = 57795662ZV;
 				INFOPLIST_FILE = pplLiftTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.pplLiftTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.531personalAssistant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -457,7 +460,7 @@
 				DEVELOPMENT_TEAM = 57795662ZV;
 				INFOPLIST_FILE = pplLiftTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.pplLiftTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.531personalAssistant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -524,7 +527,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		07B6B8941E4258A500D2D760 /* Build configuration list for PBXProject "pplLiftTracker" */ = {
+		07B6B8941E4258A500D2D760 /* Build configuration list for PBXProject "531personalAssistant" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07B6B8C11E4258A500D2D760 /* Debug */,
